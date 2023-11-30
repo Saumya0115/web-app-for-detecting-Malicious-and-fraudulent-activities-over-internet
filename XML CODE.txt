@@ -1,0 +1,69 @@
+XML - COde
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main Activity UI -->
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_below="@id/phoneNumberEditText"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onProceedButtonClick" />
+
+    <!-- Check Activity UI -->
+    <TextView
+        android:id="@+id/checkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check using Paytm/Facebook/Truecaller"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/paytmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paytm"
+        android:layout_below="@id/checkTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onPaytmButtonClick" />
+
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:layout_below="@id/paytmButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onFacebookButtonClick" />
+
+    <Button
+        android:id="@+id/truecallerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Truecaller"
+        android:layout_below="@id/facebookButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="onTruecallerButtonClick" />
+
+</RelativeLayout>
